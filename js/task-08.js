@@ -14,9 +14,9 @@ function handleSubmit(event) {
     return alert("All fields must be filled");
   }
   const formData = {};
-  const getMailst = event.currentTarget.elements.email.value;
+  const getMail = event.currentTarget.elements.email.value;
   const getPassword = event.currentTarget.elements.password.value;
-  formData.email = getMailst;
+  formData.email = getMail;
   formData.password = getPassword;
   console.log(formData);
   event.currentTarget.reset();
