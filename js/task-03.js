@@ -25,5 +25,4 @@ const image = images.reduce((total, img) => {
   total.push(`<li class = "gallery"><img src="${img.url}" alt="${img.alt}" width="370"></li>`);
   return total;
 }, []);
-console.log("image", image);
 list.insertAdjacentHTML("afterbegin", image.join(""));
